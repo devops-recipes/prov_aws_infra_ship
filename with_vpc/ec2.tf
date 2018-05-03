@@ -11,6 +11,7 @@ resource "aws_instance" "ship_cp_1" {
 
   root_block_device {
     volume_type = "io1"
+    iops = 1000
     volume_size = 50
     delete_on_termination = true
   }
@@ -41,6 +42,7 @@ resource "aws_instance" "ship_shr_pl_x86_u1604_01" {
 
   root_block_device {
     volume_type = "io1"
+    iops = 1000
     volume_size = 100
     delete_on_termination = true
   }
