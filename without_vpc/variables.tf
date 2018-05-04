@@ -33,12 +33,7 @@ variable "vpc_id" {
 
 
 variable "ig_id" {
-  description = "Internet Gateway ID opf the VPC"
-}
-
-
-variable "ship_vpc_cidr" {
-  description = "Uber IP addressing for the Network"
+  description = "Internet Gateway ID of the VPC"
 }
 
 variable "ship_sn_cidr" {
