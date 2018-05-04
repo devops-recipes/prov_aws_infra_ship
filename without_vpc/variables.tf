@@ -36,11 +36,6 @@ variable "ig_id" {
   description = "Internet Gateway ID opf the VPC"
 }
 
-
-variable "ship_vpc_cidr" {
-  description = "Uber IP addressing for the Network"
-}
-
 variable "ship_sn_cidr" {
   description = "Public 0.0 CIDR for externally accesible subnet"
 }
