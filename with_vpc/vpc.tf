@@ -100,7 +100,17 @@ resource "aws_security_group" "ship_sg" {
       "0.0.0.0/0"
     ]
   }
-
+  
+  ingress {
+    # allow all traffic from private SN
+    from_port = "0"
+    to_port = "0"
+    protocol = "-1"
+    cidr_blocks = [
+      "${var.ship_sn_cidr}"
+    ]
+  }
+  
   egress {
     # allow all traffic to private SN
     from_port = "0"
